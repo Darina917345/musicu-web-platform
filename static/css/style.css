@@ -1,0 +1,338 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  background: #F8F9FA;
+}
+
+/* Центрований контейнер до 1200px */
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Clearfix: псевдоелемент ::after */
+.container::after,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Шапка та навігація */
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #dee2e6;
+  padding: 12px 0;
+}
+.site-header .logo {
+  float: left;
+  width: 140px;
+  margin: 0;
+}
+.site-header nav {
+  float: right;
+}
+.site-header nav ul {          
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-header nav li {
+  display: inline-block;
+  margin-left: 8px;
+}
+.site-header nav a {
+  display: block;
+  padding: 8px 14px;
+  color: #212529;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.site-header nav a:hover,       
+.site-header nav a.active {
+  color: #6366F1;
+  border: 1px solid #6366F1;
+}
+
+/* Загальні блоки */
+#main {                          
+  padding: 24px 0 60px;
+}
+h1, h2, h3 { line-height: 1.25; }
+h2 { margin: 32px 0 16px; }
+h2 + p { margin-top: 0; }      
+
+a { color: #6366F1; }
+a[href^="http"]::after {         
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+.panel {
+  background: #FFFFFF;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6366F1;
+  color: #FFFFFF;
+  border: 0;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover { background: #4f46e5; }
+.button--small { padding: 4px 10px; font-size: 14px; }
+
+/* Головна: актуальний реліз і пошук */
+.hero {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.hero picture,
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.featured {
+  float: left;
+  width: 60%;
+  margin-right: 4%;
+}
+.featured img {
+  float: left;                  
+  width: 160px;
+  height: 160px;
+  margin: 0 20px 10px 0;
+}
+.search-box {
+  float: left;
+  width: 36%;
+}
+.genre-filter {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+.genre-filter li {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+}
+.genre-filter a {
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid #6366F1;
+  text-decoration: none;
+}
+.genre-filter li:first-child a {  
+  background: #6366F1;
+  color: #FFFFFF;
+}
+
+/* Картки альбомів */
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cards::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.card {
+  position: relative;
+  float: left;
+  width: 23%;
+  margin: 0 2.666% 24px 0;
+  background: #FFFFFF;
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: center;
+}
+.card:nth-child(4n) { margin-right: 0; }
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+.card > h3 {                   
+  margin: 4px 0;
+  font-size: 18px;
+}
+.card p { margin: 0; }
+.card__badge {
+  position: absolute;            
+  top: 20px;
+  right: 20px;
+  padding: 2px 8px;
+  background: #212529;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.rating::before {                
+  content: "★ ";
+  color: #f59e0b;
+}
+
+/* Відео */
+.video-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+.video-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Сторінка альбому */
+.album-cover {
+  float: left;
+  width: 320px;
+  margin: 0 28px 16px 0;
+}
+.album-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.album-cover figcaption {
+  padding-top: 6px;
+  font-size: 14px;
+  color: #6c757d;
+}
+.artist-box {
+  float: right;                  
+  width: 260px;
+  margin: 0 0 16px 24px;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+.artist-box img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 8px;
+  display: block;
+}
+.meta { padding-left: 20px; }
+
+table.tracklist {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  background: #FFFFFF;
+}
+.tracklist th,
+.tracklist td {
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+.tracklist th { background: #e9ecef; }
+.tracklist tr:hover td { background: #f1f3ff; }
+
+.comments {
+  clear: both;
+  padding-top: 8px;
+}
+.comment {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background: #FFFFFF;
+  border-left: 4px solid #6366F1;
+}
+.comment p { margin: 4px 0 0; }
+
+/* Форми */
+form.form {
+  width: 560px;
+  max-width: 100%;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #dee2e6;
+}
+.form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+.form input[type="text"],        
+.form input[type="email"],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  font: inherit;
+}
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: 2px solid #6366F1;
+  border-color: #6366F1;
+}
+.form .inline-label {
+  display: inline-block;
+  margin: 8px 16px 0 0;
+  font-weight: normal;
+}
+.form .button { margin-top: 16px; }
+
+/* Підвал */
+.site-footer {
+  background: #FFFFFF;
+  border-top: 1px solid #dee2e6;
+  padding: 20px 0;
+}
+.site-footer p {
+  float: left;
+  margin: 0;
+}
+.site-footer ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-footer li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Плаваюча кнопка «Нагору»: position: fixed */
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 8px 14px;
+  background: #212529;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#to-top:hover { background: #6366F1; }
+
+.image-map { display: block; max-width: 100%; height: auto; }
+
+/* Текст рецензії займає простір між двома float-блоками */
+.review { overflow: hidden; }
+.search-box form.form { width: 100%; padding: 0; border: 0; }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакти — MusicU</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container">
+    <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 36" width="140" height="36"><circle cx="18" cy="18" r="14" fill="#6366F1"/><circle cx="18" cy="18" r="5" fill="#fff"/><text x="40" y="25" font-family="sans-serif" font-size="22" font-weight="bold" fill="#212529">MusicU</text></svg></a>
+    <nav>
+      <ul><li><a href="index.html">Головна</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="contact.html" class="active">Контакти</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+<h1>Зворотний зв'язок</h1>
+<p>Напишіть нам, якщо маєте питання чи пропозицію.</p>
+
+<form class="form" action="#" method="post" id="contact-form">
+  <label for="name">Ім'я</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="topic">Тема звернення</label>
+  <select id="topic" name="topic">
+    <option value="question">Питання</option>
+    <option value="bug">Помилка на сайті</option>
+    <option value="album">Пропозиція альбому</option>
+  </select>
+
+  <label for="message">Повідомлення</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <p>Бажаний спосіб відповіді:</p>
+  <label class="inline-label"><input type="radio" name="reply" value="email" checked> Email</label>
+  <label class="inline-label"><input type="radio" name="reply" value="none"> Не потрібна</label>
+
+  <label class="inline-label"><input type="checkbox" name="agree" value="1" required> Погоджуюсь з <a href="files/rules.txt" download>правилами</a></label>
+
+  <button class="button" type="submit">Надіслати</button>
+</form>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 MusicU</p>
+    <ul>
+      <li><a href="files/rules.txt" download>Завантажити правила</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </div>
+</footer>
+<a id="to-top" href="#top">↑ Нагору</a>
+</body>
+</html>

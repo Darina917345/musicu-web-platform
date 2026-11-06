@@ -336,3 +336,21 @@ form.form {
 /* Текст рецензії займає простір між двома float-блоками */
 .review { overflow: hidden; }
 .search-box form.form { width: 100%; padding: 0; border: 0; }
+
+
+/* Лаб. 3: повідомлення та помилки полів */
+.form input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  font: inherit;
+}
+.form input[type="password"]:focus { outline: 2px solid #6366F1; border-color: #6366F1; }
+.form input.invalid { border-color: #dc3545; }
+.field-error { margin: 4px 0 0; min-height: 1.5em; font-size: 14px; color: #dc3545; }
+.message { width: 560px; max-width: 100%; margin: 16px 0 0; padding: 0; }
+.message--error,
+.message--success { padding: 12px 16px; border-left: 4px solid; background: #FFFFFF; }
+.message--error { border-color: #dc3545; color: #842029; }
+.message--success { border-color: #198754; color: #0f5132; }

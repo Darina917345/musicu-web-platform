@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вхід — MusicU</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container">
+    <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 36" width="140" height="36"><circle cx="18" cy="18" r="14" fill="#6366F1"/><circle cx="18" cy="18" r="5" fill="#fff"/><text x="40" y="25" font-family="sans-serif" font-size="22" font-weight="bold" fill="#212529">MusicU</text></svg></a>
+    <nav>
+      <ul><li><a href="index.html">Головна</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="contact.html">Контакти</a></li><li><a href="auth.html" class="active">Увійти / Профіль</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+<h1>Вхід</h1>
+<p>Введіть логін і пароль, щоб увійти в особистий кабінет.</p>
+
+<form class="form" id="login-form" action="#" method="post" novalidate>
+  <label for="login">Логін</label>
+  <input type="text" id="login" name="login" placeholder="Наприклад, student_1">
+  <p class="field-error" id="login-error"></p>
+
+  <label for="password">Пароль</label>
+  <input type="password" id="password" name="password">
+
+  <button class="button" type="submit" id="login-btn">Увійти</button>
+</form>
+
+<p id="login-message" class="message"></p>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 MusicU</p>
+    <ul>
+      <li><a href="files/rules.txt" download>Завантажити правила</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </div>
+</footer>
+<a id="to-top" href="#top">↑ Нагору</a>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Головна — MusicU</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container">
+    <a href="index.html"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 36" width="140" height="36"><circle cx="18" cy="18" r="14" fill="#6366F1"/><circle cx="18" cy="18" r="5" fill="#fff"/><text x="40" y="25" font-family="sans-serif" font-size="22" font-weight="bold" fill="#212529">MusicU</text></svg></a>
+    <nav>
+      <ul><li><a href="index.html" class="active">Головна</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="contact.html">Контакти</a></li><li><a href="auth.html">Увійти / Профіль</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+<section class="hero">
+  <picture>
+    <source srcset="img/hero.svg" type="image/svg+xml">
+    <img src="img/hero.svg" alt="Хвилі звуку на фіолетовому тлі" width="800" height="300">
+  </picture>
+</section>
+
+<section class="clearfix">
+  <article class="featured panel">
+    <h2>Актуальний реліз</h2>
+    <img src="img/cover1.svg" alt="Обкладинка альбому «Нічне місто»" width="400" height="400">
+    <h3>Нічне місто — Lumen Fox</h3>
+    <p>Електронний альбом 2025 року про нічні вулиці, неон і самотність у великому місті.</p>
+    <a class="button" href="album.html">Переглянути деталі</a>
+  </article>
+
+  <aside class="search-box panel">
+    <h2>Фільтр і пошук</h2>
+    <p>Фільтр за жанрами:</p>
+    <ul class="genre-filter"><li><a href="catalog.html">Усі</a></li><li><a href="catalog.html#genre-pop">Поп</a></li><li><a href="catalog.html#genre-rock">Рок</a></li><li><a href="catalog.html#genre-electro">Електроніка</a></li><li><a href="catalog.html#genre-folk">Фолк</a></li></ul>
+    <form class="form" action="catalog.html" method="get">
+      <label for="q">Пошук альбому чи виконавця</label>
+      <input type="text" id="q" name="q" placeholder="Введіть назву...">
+      <button class="button" type="submit">Знайти</button>
+    </form>
+  </aside>
+</section>
+
+<section>
+  <h2>Каталог альбомів</h2>
+  <ul class="cards">
+    <li class="card">
+  <span class="card__badge">Електроніка</span>
+  <a href="album.html"><img src="img/cover1.svg" alt="Обкладинка альбому «Нічне місто»" width="400" height="400"></a>
+  <h3>Нічне місто</h3>
+  <p>Lumen Fox, 2025</p>
+  <p class="rating">Оцінка: 8/10</p>
+</li><li class="card">
+  <span class="card__badge">Поп</span>
+  <a href="album.html"><img src="img/cover2.svg" alt="Обкладинка альбому «Тиха вода»" width="400" height="400"></a>
+  <h3>Тиха вода</h3>
+  <p>Оксана Рей, 2024</p>
+  <p class="rating">Оцінка: 7/10</p>
+</li><li class="card">
+  <span class="card__badge">Рок</span>
+  <a href="album.html"><img src="img/cover3.svg" alt="Обкладинка альбому «Rust &amp; Roses»" width="400" height="400"></a>
+  <h3>Rust &amp; Roses</h3>
+  <p>Black Harbor, 2025</p>
+  <p class="rating">Оцінка: 9/10</p>
+</li><li class="card">
+  <span class="card__badge">Фолк</span>
+  <a href="album.html"><img src="img/cover4.svg" alt="Обкладинка альбому «Золоті поля»" width="400" height="400"></a>
+  <h3>Золоті поля</h3>
+  <p>Дикий мед, 2023</p>
+  <p class="rating">Оцінка: 8/10</p>
+</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Відео тижня (кліп)</h2>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" title="Відео тижня" allowfullscreen></iframe>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 MusicU</p>
+    <ul>
+      <li><a href="files/rules.txt" download>Завантажити правила</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </div>
+</footer>
+<a id="to-top" href="#top">↑ Нагору</a>
+</body>
+</html>

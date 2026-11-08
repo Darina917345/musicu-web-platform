@@ -1,4 +1,4 @@
-// Запит до зовнішнього музичного API (Apple Music RSS, формат JSON, без ключа).
+// Запит до зовнішнього музичного API (Apple Music RSS, JSON, без ключа) через проксі Vite (див. vite.config.js).
 // Повертає масив альбомів або кидає ApiError з зрозумілим повідомленням.
 
 const BASE_URL = "/charts-api/api/v2";

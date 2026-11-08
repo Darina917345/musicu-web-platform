@@ -1,4 +1,5 @@
-export default function Header() {
+export default function Header({ user, page }) {
+  const cls = (name) => (page === name ? "active" : undefined);
   return (
     <header className="site-header">
       <div className="container">
@@ -11,7 +12,20 @@ export default function Header() {
         </a>
         <nav>
           <ul>
-            <li><a href="/" className="active">Чарти</a></li>
+            <li><a href="/" className={cls("charts")}>Чарти</a></li>
+            <li><a href="/album" className={cls("album")}>Альбом</a></li>
+            {user ? (
+              <>
+                <li><span className="header-user">Привіт, {user.login}</span></li>
+                <li>
+                  <form className="logout-form" method="post" action="/logout">
+                    <button type="submit" className="button button--small">Вийти</button>
+                  </form>
+                </li>
+              </>
+            ) : (
+              <li><a href="/auth" className={cls("auth")}>Увійти / Реєстрація</a></li>
+            )}
           </ul>
         </nav>
       </div>

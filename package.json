@@ -1,0 +1,8 @@
+{
+  "name": "musicu-web-platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix client install && npm --prefix server install",
+    "dev": "npm --prefix server run dev"
+  }
+}

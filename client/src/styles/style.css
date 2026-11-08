@@ -370,3 +370,51 @@ form.form {
 
 .error-box { padding: 16px; margin-bottom: 16px; background: #FFFFFF; border-left: 4px solid #dc3545; color: #842029; }
 .error-box p { margin: 0 0 12px; }
+
+/* ---------- Лаб. 5: користувач у шапці, пагінація, повідомлення ---------- */
+.header-user { display: block; padding: 8px 14px; color: #6c757d; }
+.logout-form { display: inline-block; margin: 0; }
+.comment__date { font-size: 13px; color: #6c757d; }
+.pagination { margin: 16px 0 24px; }
+.pagination a,
+.pagination span {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 4px 12px;
+  border: 1px solid #6366F1;
+  text-decoration: none;
+}
+.pagination__current { background: #6366F1; color: #FFFFFF; }
+main > .message,
+.comments > .message { margin-bottom: 16px; }
+
+/* ---------- Темна тема (сервер вмикає її вночі або за cookie) ---------- */
+.theme-dark { background: #121216; color: #ECECF1; }
+.theme-dark .site-header,
+.theme-dark .site-footer,
+.theme-dark .panel,
+.theme-dark .card,
+.theme-dark .comment,
+.theme-dark .form,
+.theme-dark .tracklist,
+.theme-dark .error-box,
+.theme-dark .message--error,
+.theme-dark .message--success { background: #1D1D24; border-color: #2e2e38; color: #ECECF1; }
+.theme-dark .site-header nav a { color: #ECECF1; }
+.theme-dark .site-header nav a:hover,
+.theme-dark .site-header nav a.active { color: #9B86FF; border-color: #9B86FF; }
+.theme-dark a { color: #9B86FF; }
+.theme-dark .button { color: #FFFFFF; }
+.theme-dark .tracklist th { background: #26262f; }
+.theme-dark .tracklist th,
+.theme-dark .tracklist td { border-color: #2e2e38; }
+.theme-dark .tracklist tr:hover td { background: #26262f; }
+.theme-dark .form input,
+.theme-dark .form select,
+.theme-dark .form textarea { background: #121216; color: #ECECF1; border-color: #3a3a46; }
+.theme-dark .card--placeholder .placeholder-image,
+.theme-dark .card--placeholder .placeholder-line { background: #2e2e38; }
+.theme-dark .comment__date,
+.theme-dark .header-user,
+.theme-dark .card__genre { color: #a0a0ad; }
+.theme-dark .logo text { fill: #ECECF1; }

@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Топ-чарти — MusicU</title>
+    <title><!--app-title--> — MusicU</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
   </head>
-  <body id="top">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body id="top" class="<!--body-class-->">
+    <div id="root"><!--ssr-outlet--></div>
+    <script>window.__DATA__ = <!--ssr-data-->;</script>
+    <script type="module" src="/src/entry-client.jsx"></script>
   </body>
 </html>
